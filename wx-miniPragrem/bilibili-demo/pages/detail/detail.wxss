@@ -1,0 +1,156 @@
+.title-left{
+  width: 120rpx;
+  height: 56rpx;
+}
+.title-center{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.title-center>image{
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 30rpx;
+}
+.title-right{
+  width: 180rpx;
+  padding: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:pink;
+  color: #ffffff;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+}
+.video-info{
+  margin-top: 15rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.video-info video{
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.video-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15rpx;
+  font-size: 32rpx;
+}
+
+.video-title text{
+  color: #000;
+}
+
+.video-detail{
+  display: flex;
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  padding-left: 15rpx;
+}
+.video-detail :first-child{
+  color: #000;
+}
+.video-detail text{
+  margin-right: 5rpx;
+}
+
+/* 其它视频列表 */
+.other-list{
+  margin-top: 20rpx;
+}
+.other-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.other-item>.item-left{
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other-item image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.other-item>.item-right{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.other-item .play{
+  font-size: 30rpx;
+  color: #e06f93;
+}
+.other-item .comment{
+  font-size: 26rpx;
+  color: #666666;
+}
+
+/* 评论 */
+.comment-panel{
+  margin-top: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  color: #000;
+  padding: 15rpx;
+}
+
+.comment-top{
+  padding: 10rpx
+}
+.comment-top text{
+  color: #999;
+}
+.comment-list{
+  margin-top: 10rpx;
+}
+.comment-item{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+  border-top: 1rpx solid #eee;
+}
+.comment-item .item-left{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment-item image{
+  width: 60%;
+  height: 68rpx;
+  border-radius: 50%;
+  
+}
+.comment-item .item-right{
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.comment-info{
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+}
+.comment-info :last-child{
+  font-size: 24rpx;
+  color: #999;
+}
+.comment-detail{
+  font-size: 26rpx;
+  padding: 10rpx 0;
+  color: #000;
+}

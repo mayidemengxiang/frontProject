@@ -1,0 +1,92 @@
+.title-left{
+  width: 120rpx;
+  height: 56rpx;
+}
+.title-center{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.title-center>image{
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 30rpx;
+}
+.title-right{
+  width: 180rpx;
+  padding: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:pink;
+  color: #ffffff;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+}
+.nav-list{
+  white-space: nowrap;
+  padding: 5rpx 0;
+}
+.nav-item{
+  flex: 1;
+  padding: 20rpx 45rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
+.active-item{
+  border-bottom: 5rpx solid #de688b;
+}
+.swiper-list{
+  height: 220rpx;
+  margin-top: 10rpx;
+}
+.swiper-list swiper-item{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-list .item{
+ width: 100%;
+ height: 100%;
+}
+.swiper-list .item image{
+  width: 100%;
+  height: 100%;
+}
+
+.video-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 5rpx;
+}
+.video-list .item{
+  width: 48%;
+  margin-top: 10rpx;
+}
+.video-image{
+  position: relative;
+}
+.video-image image{
+  width: 100%;
+  border-radius: 15rpx;
+}
+.video-info{
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 24rpx;
+}
+.video-desc{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 28rpx;
+}

@@ -1,0 +1,15 @@
+.title-bar{
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  padding: 10rpx;
+}
+.title-bar-left{
+  flex: 1;
+}
+.title-bar-center{
+  flex: 3;
+}
+.title-bar-right{
+  flex: 1;
+}

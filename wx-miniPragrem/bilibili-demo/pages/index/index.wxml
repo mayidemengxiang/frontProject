@@ -1,0 +1,48 @@
+<view class="main">
+  <!-- 标题 -->
+  <title-bar>
+    <image class="title-left" slot="left" src="../../static/icon/logo2.png"></image>
+    <view class="title-center" slot="center">
+      <image src="../../static/icon/search.png"></image>
+      <image src="../../static/icon/user.png"></image>
+    </view>
+    <view class="title-right" slot="right">下载APP</view>
+  </title-bar>
+  <!-- 导航栏 -->
+  <scroll-view scroll-x class="nav-list">
+    <view wx:for="{{navList}}" 
+          wx:key="id"
+          data-index="{{index}}"
+          bindtap="selectNavItem"
+          class="nav-item {{currentIndex===index?'active-item':''}}">
+          {{ item.text }}
+    </view>
+  </scroll-view>
+  <!-- 轮播图 -->
+  <swiper circular indicator-dots autoplay class="swiper-list">
+    <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}">
+      <view class="item">
+        <image mode="widthFix" src="{{item.imgSrc}}"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+  <!-- 视频列表 -->
+  <view class="video-list">
+    <navigator url="../detail/detail?id={{item.id}}" wx:for="{{videoList}}" wx:key="id" class="item">
+      <view class="video-image">
+        <image mode="widthFix" src="{{item.imgSrc}}"></image>
+        <view class="video-info">
+          <view class="play">
+            <text class="fa fa-play-circle-o"></text> 
+            <text>{{item.playCount}}</text>
+          </view>
+          <view class="comment">
+            <text class="fa fa-comment-o"></text>
+            <text>{{item.commentCount}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="video-desc">{{item.desc}}</view>
+    </navigator>
+  </view>
+</view>
